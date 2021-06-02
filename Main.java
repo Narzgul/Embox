@@ -16,6 +16,8 @@ public class Main
     {
         // Innitializing of the Objects
         cam = new GLEntwicklerkamera();
+        // Innitializing the Objects
+        cam = new GLSchwenkkamera();
         keyboard = new GLTastatur();
         light = new GLLicht();
         
