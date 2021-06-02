@@ -8,7 +8,7 @@ public class Main
     
     public Main()
     {
-        // Innitializing of the Objects
+        // Innitializing the Objects
         cam = new GLSchwenkkamera();
         keyboard = new GLTastatur();
         light = new GLLicht();
