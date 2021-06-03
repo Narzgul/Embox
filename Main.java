@@ -12,8 +12,7 @@ public class Main
         return quader;
     }
 
-    public Main()
-    {
+    public Main {
         // Innitializing of the Objects
         cam = new GLEntwicklerkamera();
         cam = new GLSchwenkkamera();
