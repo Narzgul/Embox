@@ -12,8 +12,8 @@ public class Main
         return quader;
     }
 
-    public static GLKugel createKugel(double posX, double posY, double posZ, double lenght, double height, double width) {
-        GLQuader kugel = new GLKugel(posX, posY, posZ, lenght, height, width);
+    public static GLKugel createKugel(double posX, double posY, double posZ, double radius) {
+        GLKugel kugel = new GLKugel(posX, posY, posZ, radius);
         kugel.setzeSelbstleuchten(255, 255, 255);
         return kugel;
     }
@@ -32,7 +32,7 @@ public class Main
                         createQuader(0, 0, 0, 10, 10, 10);
                         break;
                     case 'k':
-                        createKugel(0, 0, 0, 10, 10, 10);
+                        createKugel(0, 0, 0, 15);
                         break;
                 }
             }
