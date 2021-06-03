@@ -1,5 +1,5 @@
 import GLOOP.*;
-import javax.swing.*;
+
 
 public class Main
 {
@@ -36,11 +36,7 @@ public class Main
                         createKugel(0, 0, 0, 15);
                         break;
                     case 'o':
-                        JFrame frame = new JFrame();
-                        frame.setTitle("Test");
-                        frame.setSize(200, 200);
-                        frame.setLocationRelativeTo(null);
-                        frame.setVisible(true);
+                        CreateMenu menu = new CreateMenu();
                         break;
                 }
             }
