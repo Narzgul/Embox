@@ -21,11 +21,9 @@ public class Main
         while(true) {
             if(keyboard.istGedrueckt()) {
                 char input = keyboard.gibZeichen();
-                System.out.print(input);
                 switch(input) {
                     case 'c':
                         createQuader(0, 0, 0, 10, 10, 10);
-                        System.out.println("createQuader");
                         break;
                 }
             }
