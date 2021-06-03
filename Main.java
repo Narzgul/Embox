@@ -12,17 +12,16 @@ public class Main
         return quader;
     }
 
-    public Main {
+    public Main() {
         // Innitializing of the Objects
-        cam = new GLEntwicklerkamera();
-        cam = new GLSchwenkkamera();
+        cam = new GLEntwicklerkamera(500, 500);
         keyboard = new GLTastatur();
         light = new GLLicht();
 
         while(true) {
-            if(keyboard.wurdeGedrueckt()) {
-                switch(keyboard.gibZeichen()) {
-                    case 'C':
+            if(keyboard.istGedrueckt()) {
+                char input = keyboard.gibZeichen();
+                switch(input) {
                     case 'c':
                         createQuader(0, 0, 0, 10, 10, 10);
                         break;
