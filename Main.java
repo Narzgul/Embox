@@ -23,7 +23,6 @@ public class Main
                 char input = keyboard.gibZeichen();
                 System.out.print(input);
                 switch(input) {
-                    case 'C':
                     case 'c':
                         createQuader(0, 0, 0, 10, 10, 10);
                         System.out.println("createQuader");
