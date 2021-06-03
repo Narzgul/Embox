@@ -24,7 +24,6 @@ public class Main
         keyboard = new GLTastatur();
         light = new GLLicht();
 
-        // The main loop
         while(true) {
             if(keyboard.istGedrueckt()) {
                 char input = keyboard.gibZeichen();
