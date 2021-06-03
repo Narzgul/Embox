@@ -1,6 +1,5 @@
 import GLOOP.*;
 
-
 public class Main
 {
     GLKamera cam;
