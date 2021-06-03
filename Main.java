@@ -12,19 +12,21 @@ public class Main
         return quader;
     }
 
-    public Main {
+    public Main() {
         // Innitializing of the Objects
-        cam = new GLEntwicklerkamera();
-        cam = new GLSchwenkkamera();
+        cam = new GLEntwicklerkamera(500, 500);
         keyboard = new GLTastatur();
         light = new GLLicht();
 
         while(true) {
-            if(keyboard.wurdeGedrueckt()) {
-                switch(keyboard.gibZeichen()) {
+            if(keyboard.istGedrueckt()) {
+                char input = keyboard.gibZeichen();
+                System.out.print(input);
+                switch(input) {
                     case 'C':
                     case 'c':
                         createQuader(0, 0, 0, 10, 10, 10);
+                        System.out.println("createQuader");
                         break;
                 }
             }
