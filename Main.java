@@ -34,6 +34,9 @@ public class Main
                     case 'k':
                         createKugel(0, 0, 0, 15);
                         break;
+                    case 'o':
+                        CreateMenu menu = new CreateMenu();
+                        break;
                 }
             }
         }
