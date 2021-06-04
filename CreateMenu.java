@@ -19,9 +19,9 @@ public class CreateMenu {
             JButton button = new JButton("Create");
             button.addActionListener(actionEvent -> {
                 switch (Objects.requireNonNull(cb.getSelectedItem()).toString().toLowerCase(Locale.ROOT)) {
-                    case "cube": Main.createQuader(0, 0, 0, 10, 10, 10);
+                    case "cube": Main.createCuboid(0, 0, 0, 10, 10, 10);
                         break;
-                    case "sphere": Main.createKugel(0, 0, 0, 10);
+                    case "sphere": Main.createSphere(0, 0, 0, 10);
                         break;
                     default: System.out.println("Neither cube nor sphere");
                 }

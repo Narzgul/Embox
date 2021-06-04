@@ -6,20 +6,20 @@ public class Main
     GLLicht light;
     GLTastatur keyboard;
 
-    public static GLQuader createQuader(double posX, double posY, double posZ, double lenght, double height, double width) {
-        GLQuader quader = new GLQuader(posX, posY, posZ, lenght, height, width);
-        quader.setzeSelbstleuchten(255, 255, 255);
-        return quader;
+    public static GLQuader createCuboid(double posX, double posY, double posZ, double length, double height, double width) {
+        GLQuader cuboid = new GLQuader(posX, posY, posZ, length, height, width);
+        cuboid.setzeSelbstleuchten(255, 255, 255);
+        return cuboid;
     }
 
-    public static GLKugel createKugel(double posX, double posY, double posZ, double radius) {
-        GLKugel kugel = new GLKugel(posX, posY, posZ, radius);
-        kugel.setzeSelbstleuchten(255, 255, 255);
-        return kugel;
+    public static GLKugel createSphere(double posX, double posY, double posZ, double radius) {
+        GLKugel sphere = new GLKugel(posX, posY, posZ, radius);
+        sphere.setzeSelbstleuchten(255, 255, 255);
+        return sphere;
     }
 
     public Main() {
-        // Innitializing of the Objects
+        // Initializing of the Objects
         cam = new GLEntwicklerkamera(500, 500);
         keyboard = new GLTastatur();
         light = new GLLicht();
@@ -29,14 +29,16 @@ public class Main
                 char input = keyboard.gibZeichen();
                 switch(input) {
                     case 'c':
-                        createQuader(0, 0, 0, 10, 10, 10);
+                        createCuboid(0, 0, 0, 10, 10, 10);
                         break;
                     case 'k':
-                        createKugel(0, 0, 0, 15);
+                        createSphere(0, 0, 0, 15);
                         break;
                     case 'o':
-                        CreateMenu menu = new CreateMenu();
+                        new CreateMenu();
                         break;
+                    case 'q':
+                        return;
                 }
             }
         }
