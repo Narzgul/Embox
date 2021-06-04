@@ -11,7 +11,7 @@ public class CreateMenu {
             panel.setLayout(new GridLayout(0,1));
 
             String[] items = {"Cube", "Sphere", "Torus"};
-            JComboBox<String> cb = new JComboBox<String>(items);
+            JComboBox<String> cb = new JComboBox<>(items);
             panel.add(cb);
 
             frame.add(panel);
