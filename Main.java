@@ -15,12 +15,6 @@ public class Main {
             if(keyboard.istGedrueckt()) {
                 char input = keyboard.gibZeichen();
                 switch(input) {
-                    case 'c':
-                        Util.createCuboid(0, 0, 0, 10, 10, 10);
-                        break;
-                    case 'k':
-                        Util.createSphere(0, 0, 0, 15);
-                        break;
                     case 'o':
                         new CreateMenu();
                         break;
