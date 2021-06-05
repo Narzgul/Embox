@@ -19,7 +19,7 @@ public class Main {
                         new CreateMenu();
                         break;
                     case 'q':
-                        return;
+                        System.exit(0);
                 }
             }
         }
