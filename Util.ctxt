@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Util
+comment1.params=posX\ posY\ posZ\ length\ height\ width
+comment1.target=GLOOP.GLQuader\ createCuboid(double,\ double,\ double,\ double,\ double,\ double)
+comment2.params=posX\ posY\ posZ\ radius
+comment2.target=GLOOP.GLKugel\ createSphere(double,\ double,\ double,\ double)
+comment3.params=posX\ posY\ posZ\ radius\ thickness
+comment3.target=GLOOP.GLTorus\ createTorus(double,\ double,\ double,\ double,\ double)
+comment4.params=posX\ posY\ posZ\ radius\ height
+comment4.target=GLOOP.GLZylinder\ createCylinder(double,\ double,\ double,\ double,\ double)
+comment5.params=posX\ posY\ posZ\ radius1\ radius2\ height
+comment5.target=GLOOP.GLKegelstumpf\ createTruncatedCone(double,\ double,\ double,\ double,\ double,\ double)
+comment6.params=posX\ posY\ posZ\ radius\ height
+comment6.target=GLOOP.GLKegel\ createCone(double,\ double,\ double,\ double,\ double)
+numComments=7

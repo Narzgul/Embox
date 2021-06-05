@@ -1,9 +1,5 @@
 #BlueJ class context
 comment0.target=Main
-comment1.params=posX\ posY\ posZ\ lenght\ height\ width
-comment1.target=GLOOP.GLQuader\ createQuader(double,\ double,\ double,\ double,\ double,\ double)
-comment2.params=posX\ posY\ posZ\ radius
-comment2.target=GLOOP.GLKugel\ createKugel(double,\ double,\ double,\ double)
-comment3.params=
-comment3.target=Main()
-numComments=4
+comment1.params=
+comment1.target=Main()
+numComments=2
