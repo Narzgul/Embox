@@ -22,6 +22,9 @@ public class Main {
                     case 'o':
                         new CreateMenu();
                         break;
+                    case 'l':
+                        new ListMenu();
+                        break;
                     case 'q':
                         System.exit(0);
                 }
