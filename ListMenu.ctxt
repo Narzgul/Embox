@@ -1,5 +1,4 @@
 #BlueJ class context
-comment0.target=ListMenu
-comment1.params=
-comment1.target=ListMenu()
-numComments=2
+comment0.params=
+comment0.target=ListMenu()
+numComments=1

@@ -14,6 +14,8 @@ public class ListMenu {
         if (size < 1) size = 1;
         panel.setLayout(new GridLayout(size, 0));
 
+        
+
         JLabel title = new JLabel("All Objects:");
         panel.add(title);
         for (GLObjekt obj : Main.objectList) {
