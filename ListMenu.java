@@ -17,7 +17,7 @@ public class ListMenu {
         JLabel title = new JLabel("All Objects:");
         panel.add(title);
         for (GLObjekt obj : Main.objectList) {
-            JLabel label = new JLabel(obj.toString());
+            JLabel label = new JLabel(obj.toString().substring(8).split("@[0-9]*")[0]);
             panel.add(label);
         }
 
