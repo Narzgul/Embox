@@ -1,3 +1,5 @@
+import GLOOP.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Locale;
@@ -19,17 +21,17 @@ public class CreateMenu {
             JButton button = new JButton("Create");
             button.addActionListener(actionEvent -> {
                 switch (Objects.requireNonNull(cb.getSelectedItem()).toString().toLowerCase(Locale.ROOT)) {
-                    case "cube": Util.createCuboid(0, 0, 0, 10, 10, 10);
+                    case "cube": Util.createObject(new GLWuerfel(0, 0, 0, 10));
                         break;
-                    case "sphere": Util.createSphere(0, 0, 0, 10);
+                    case "sphere": Util.createObject(new GLKugel(0, 0, 0, 10));
                         break;
-                    case "torus": Util.createTorus(0, 0, 0, 10, 10);
+                    case "torus": Util.createObject(new GLTorus(0, 0, 0, 0, 0));
                         break;
-                    case "cone": Util.createCone(0, 0, 0, 10, 10);
+                    case "cone": Util.createObject(new GLKegel(0, 0, 0, 10, 10));
                         break;
-                    case "truncated cone": Util.createTruncatedCone(0, 0, 0, 20, 10, 15);
+                    case "truncated cone": Util.createObject(new GLKegelstumpf(0,0,0,10,10,10));
                         break;
-                    case "cylinder": Util.createCylinder(0, 0, 0, 10, 20);
+                    case "cylinder": Util.createObject(new GLZylinder(0, 0, 0, 10, 10));
                         break;
                     default: System.out.println("Tried to create not handheld object");
                 }

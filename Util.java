@@ -1,6 +1,13 @@
 import GLOOP.*;
 
 public interface Util {
+    
+    static GLObjekt createObject(GLObjekt object) {
+        object.setzeSelbstleuchten(255, 255, 255);
+        Main.objectList.add(object);
+        return object;
+    }
+    
     static GLQuader createCuboid(double posX, double posY, double posZ, double length, double height, double width) {
         GLQuader cuboid = new GLQuader(posX, posY, posZ, length, height, width);
         cuboid.setzeSelbstleuchten(255, 255, 255);
