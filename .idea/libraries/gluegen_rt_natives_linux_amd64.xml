@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="gluegen-rt-natives-linux-amd64">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/gluegen-rt-natives-linux-amd64.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/gluegen-rt-natives-linux-armv7.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/gluegen-rt-natives-linux-armv7hf.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/gluegen-rt-natives-linux-i586.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/gluegen-rt.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/jogl-all-natives-linux-amd64.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/jogl-all-natives-linux-armv7.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/jogl-all-natives-linux-armv7hf.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/jogl-all-natives-linux-i586.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/jogl-all.jar!/" />
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/GLOOP.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Coding/GLOOP/Installation_GLOOP_3.7__Linux_/Installation GLOOP 3.7 (Linux)/lib/GLOOP.jar!/doc" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
