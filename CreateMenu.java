@@ -9,7 +9,7 @@ public class CreateMenu {
     public CreateMenu() {
             JFrame frame = new JFrame();
             frame.setTitle("Create");
-            frame.setLocationRelativeTo(null);
+            frame.setLocationRelativeTo(null); // Middle of the screen
 
             JPanel panel = new JPanel();
             panel.setLayout(new GridLayout(0,1));
@@ -35,12 +35,12 @@ public class CreateMenu {
                         break;
                     default: System.out.println("Tried to create not handheld object");
                 }
-                frame.dispose();
+                frame.dispose(); // Close the frame
             });
             panel.add(button);
 
             frame.add(panel);
             frame.pack();
-            frame.setVisible(true);
+            frame.setVisible(true); // Open the frame
     }
 }
