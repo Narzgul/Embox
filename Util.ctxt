@@ -1,14 +1,5 @@
 #BlueJ class context
-comment0.params=posX\ posY\ posZ\ length\ height\ width
-comment0.target=GLOOP.GLQuader\ createCuboid(double,\ double,\ double,\ double,\ double,\ double)
-comment1.params=posX\ posY\ posZ\ radius
-comment1.target=GLOOP.GLKugel\ createSphere(double,\ double,\ double,\ double)
-comment2.params=posX\ posY\ posZ\ radius\ thickness
-comment2.target=GLOOP.GLTorus\ createTorus(double,\ double,\ double,\ double,\ double)
-comment3.params=posX\ posY\ posZ\ radius\ height
-comment3.target=GLOOP.GLZylinder\ createCylinder(double,\ double,\ double,\ double,\ double)
-comment4.params=posX\ posY\ posZ\ radius1\ radius2\ height
-comment4.target=GLOOP.GLKegelstumpf\ createTruncatedCone(double,\ double,\ double,\ double,\ double,\ double)
-comment5.params=posX\ posY\ posZ\ radius\ height
-comment5.target=GLOOP.GLKegel\ createCone(double,\ double,\ double,\ double,\ double)
-numComments=6
+comment0.target=Util
+comment1.params=object
+comment1.target=void\ createObject(GLOOP.GLObjekt)
+numComments=2

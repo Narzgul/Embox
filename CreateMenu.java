@@ -1,3 +1,5 @@
+import GLOOP.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Locale;
@@ -56,22 +58,21 @@ public class CreateMenu {
               answer.setVisible(true);
             }
 
-            switch (Objects.requireNonNull(cb.getSelectedItem()).toString().toLowerCase(Locale.ROOT)) {
-                case "cube": Util.createCuboid(0, 0, 0, 10, 10, 10);
-                    break;
-                case "sphere": Util.createSphere(0, 0, 0, 10);
-                    break;
-                case "torus": Util.createTorus(0, 0, 0, 10, 10);
-                    break;
-                case "cone": Util.createCone(0, 0, 0, 10, 10);
-                    break;
-                case "truncated cone": Util.createTruncatedCone(0, 0, 0, 20, 10, 15);
-                    break;
-                case "cylinder": Util.createCylinder(0, 0, 0, 10, 20);
-                    break;
-                default: System.out.println("Tried to create not handheld object");
-                nameFrame.dispose();
-                }
+          switch (Objects.requireNonNull(cb.getSelectedItem()).toString().toLowerCase(Locale.ROOT)) {
+              case "cube": Util.createObject(new GLWuerfel(0, 0, 0, 10));
+                  break;
+              case "sphere": Util.createObject(new GLKugel(0, 0, 0, 10));
+                  break;
+              case "torus": Util.createObject(new GLTorus(0, 0, 0, 0, 0));
+                  break;
+              case "cone": Util.createObject(new GLKegel(0, 0, 0, 10, 10));
+                  break;
+              case "truncated cone": Util.createObject(new GLKegelstumpf(0,0,0,10,10,10));
+                  break;
+              case "cylinder": Util.createObject(new GLZylinder(0, 0, 0, 10, 10));
+                  break;
+              default: System.out.println("Tried to create not handheld object");
+          }
             });
     }
 }
