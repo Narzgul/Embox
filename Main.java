@@ -8,6 +8,7 @@ public class Main {
     GLLicht light;
     GLTastatur keyboard;
     public static List<GLObjekt> objectList = new ArrayList<>();
+    public static List<String> objectname = new ArrayList<>();
 
     public Main() {
         // Initializing of the Objects
@@ -19,7 +20,7 @@ public class Main {
             if(keyboard.istGedrueckt()) {
                 char input = keyboard.gibZeichen();
                 switch(input) {
-                    case 'o':
+                    case 'c':
                         new CreateMenu();
                         break;
                     case 'l':
