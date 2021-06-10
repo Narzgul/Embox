@@ -1,5 +1,4 @@
 #BlueJ class context
-comment0.target=Util
-comment1.params=object
-comment1.target=void\ createObject(GLOOP.GLObjekt)
-numComments=2
+comment0.params=object
+comment0.target=void\ createObject(GLOOP.GLObjekt)
+numComments=1
