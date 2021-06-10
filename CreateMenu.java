@@ -2,15 +2,13 @@ import GLOOP.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.Locale;
 import java.util.Objects;
 
 public class CreateMenu {
     public CreateMenu() {
-        final String[] texturePath = {""};
+        final String[] texturePath = {"standart.png"};
 
       JFrame nameFrame = new JFrame();
       nameFrame.setSize(200,100);
@@ -46,15 +44,12 @@ public class CreateMenu {
 
         JFileChooser fileChooser = new JFileChooser();
         JButton addTexture = new JButton("Add a texture");
-        addTexture.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int returnVal = fileChooser.showOpenDialog(nameFrame);
+        addTexture.addActionListener(e -> {
+            int returnVal = fileChooser.showOpenDialog(nameFrame);
 
-                if (returnVal == JFileChooser.APPROVE_OPTION) {
-                    File file = fileChooser.getSelectedFile();
-                    texturePath[0] = file.getAbsolutePath();
-                }
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File file = fileChooser.getSelectedFile();
+                texturePath[0] = file.getAbsolutePath();
             }
         });
         namePanel.add(addTexture);
@@ -80,17 +75,17 @@ public class CreateMenu {
                 Main.objectname.add(input);
 
             switch (Objects.requireNonNull(cb.getSelectedItem()).toString().toLowerCase(Locale.ROOT)) {
-                case "cube": Util.createObject(new GLWuerfel(0, 0, 0, 10));
+                case "cube": Util.createObject(new GLWuerfel(0, 0, 0, 10, texturePath[0]));
                     break;
                 case "sphere": Util.createObject(new GLKugel(0, 0, 0, 10, texturePath[0]));
                     break;
-                case "torus": Util.createObject(new GLTorus(0, 0, 0, 0, 0));
+                case "torus": Util.createObject(new GLTorus(0, 0, 0, 0, 0, texturePath[0]));
                     break;
-                case "cone": Util.createObject(new GLKegel(0, 0, 0, 10, 10));
+                case "cone": Util.createObject(new GLKegel(0, 0, 0, 10, 10, texturePath[0]));
                     break;
-                case "truncated cone": Util.createObject(new GLKegelstumpf(0,0,0,10,10,10));
+                case "truncated cone": Util.createObject(new GLKegelstumpf(0,0,0,10,10,10, texturePath[0]));
                     break;
-                case "cylinder": Util.createObject(new GLZylinder(0, 0, 0, 10, 10));
+                case "cylinder": Util.createObject(new GLZylinder(0, 0, 0, 10, 10, texturePath[0]));
                     break;
                 default: System.out.println("Tried to create not handheld object");
                     break;
