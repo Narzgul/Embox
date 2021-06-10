@@ -41,7 +41,7 @@ public class CreateMenu {
       panel.add(cb);
 
       JButton button = new JButton("Create");
-      button.addActionListener(actionEvent -> {
+      button.addActionListener(createEvent -> {
         nameFrame.setVisible(true);
         frame.dispose();
             });
@@ -50,13 +50,15 @@ public class CreateMenu {
             frame.pack();
             frame.setVisible(true);
 
-      nameButton.addActionListener(actionEvent2 -> {
+      nameButton.addActionListener(nameEvent -> {
 
             String input = text.getText();
             if(Main.objectname.contains(input)) {
-
               answer.setVisible(true);
             }
+
+            else {
+              Main.objectname.add(input);
 
           switch (Objects.requireNonNull(cb.getSelectedItem()).toString().toLowerCase(Locale.ROOT)) {
               case "cube": Util.createObject(new GLWuerfel(0, 0, 0, 10));
@@ -72,7 +74,10 @@ public class CreateMenu {
               case "cylinder": Util.createObject(new GLZylinder(0, 0, 0, 10, 10));
                   break;
               default: System.out.println("Tried to create not handheld object");
+                  break;
           }
-            });
+            nameFrame.dispose(); 
+        }
+      });
     }
 }
