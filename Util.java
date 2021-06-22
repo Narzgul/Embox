@@ -12,9 +12,7 @@ public interface Util {
         Main.objectList.add(object); // Adds tho object to the list
     }
 
-    // static void attributesChanger(GLObjekt object) {
-    static void attributesChanger() {
-        GLObjekt object = Main.objectList.get(0);
+    static void attributesChanger(GLObjekt object) {
         JFrame frame = new JFrame();
         frame.setTitle("Change Obj");
         frame.setLocationRelativeTo(null);
