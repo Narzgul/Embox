@@ -26,6 +26,9 @@ public class Main {
                     case 'l':
                         new ListMenu();
                         break;
+                    case 'm':
+                        Util.attributesChanger();
+                        break;
                     case 'q':
                         System.exit(0);
                 }
