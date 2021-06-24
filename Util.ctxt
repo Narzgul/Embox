@@ -1,4 +1,9 @@
 #BlueJ class context
-comment0.params=object
-comment0.target=void\ createObject(GLOOP.GLObjekt)
-numComments=1
+comment0.target=Util
+comment1.params=object
+comment1.target=void\ createObject(GLOOP.GLObjekt)
+comment2.params=object
+comment2.target=void\ attributesChanger(GLOOP.GLObjekt)
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=4

@@ -79,7 +79,7 @@ public class CreateMenu {
                     break;
                 case "sphere": Util.createObject(new GLKugel(0, 0, 0, 10, texturePath[0]));
                     break;
-                case "torus": Util.createObject(new GLTorus(0, 0, 0, 0, 0, texturePath[0]));
+                case "torus": Util.createObject(new GLTorus(0, 0, 0, 10, 10, texturePath[0]));
                     break;
                 case "cone": Util.createObject(new GLKegel(0, 0, 0, 10, 10, texturePath[0]));
                     break;
