@@ -2,8 +2,6 @@ import GLOOP.GLObjekt;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public interface Util {
     // A methode to set defaults for all objects that are created
@@ -20,46 +18,27 @@ public interface Util {
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(0, 3));
 
-        panel.add(new JLabel());
+        panel.add(new JLabel()); // Spacer
 
         JButton up = new JButton("up");
-        up.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                object.setzePosition(object.gibX(), object.gibY() + 1, object.gibZ());
-            }
-        });
+        up.addActionListener(e -> object.setzePosition(object.gibX(), object.gibY() + 1, object.gibZ())); //Moves up
         panel.add(up);
         panel.add(new JLabel());
 
         JButton left = new JButton("left");
-        left.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                object.setzePosition(object.gibX() - 1, object.gibY(), object.gibZ());
-            }
-        });
+        left.addActionListener(e -> object.setzePosition(object.gibX() - 1, object.gibY(), object.gibZ())); //Moves down
         panel.add(left);
 
         JButton back = new JButton("back");
-        back.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                object.setzePosition(object.gibX(), object.gibY(), object.gibZ() - 1);
-            }
-        });
+        back.addActionListener(e -> object.setzePosition(object.gibX(), object.gibY(), object.gibZ() - 1)); //Moved back
         panel.add(back);
 
         JButton right = new JButton("right");
-        right.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                object.setzePosition(object.gibX() + 1, object.gibY(), object.gibZ());
-            }
-        });
+        right.addActionListener(e -> object.setzePosition(object.gibX() + 1, object.gibY(), object.gibZ())); //Moves right
         panel.add(right);
 
-        panel.add(new JLabel());
+        panel.add(new JLabel()); //Spacer
+
         /*
         JSlider XRot = new JSlider(SwingConstants.VERTICAL, -360, 360, 0);
         XRot.addChangeListener(new ChangeListener() {
@@ -72,24 +51,14 @@ public interface Util {
          */
 
         JButton front = new JButton("front");
-        front.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                object.setzePosition(object.gibX(), object.gibY(), object.gibZ() + 1);
-            }
-        });
+        front.addActionListener(e -> object.setzePosition(object.gibX(), object.gibY(), object.gibZ() + 1)); //Moves front
         panel.add(front);
 
-        panel.add(new JLabel());
-        panel.add(new JLabel());
+        panel.add(new JLabel()); //Spacer
+        panel.add(new JLabel()); //Spacer
 
         JButton down = new JButton("down");
-        down.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                object.setzePosition(object.gibX(), object.gibY() - 1, object.gibZ());
-            }
-        });
+        down.addActionListener(e -> object.setzePosition(object.gibX(), object.gibY() - 1, object.gibZ())); //Moves down
         panel.add(down);
 
         frame.add(panel);

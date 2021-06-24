@@ -2,8 +2,6 @@ import GLOOP.GLObjekt;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ListMenu {
     public ListMenu() {
@@ -12,22 +10,13 @@ public class ListMenu {
         frame.setLocationRelativeTo(null);
 
         JPanel panel = new JPanel();
-        int size = Main.objectList.size();
-        if (size < 1) size = 1;
         panel.setLayout(new GridLayout(0, 1));
-
-
 
         JLabel title = new JLabel("All Objects:");
         panel.add(title);
         for (GLObjekt obj : Main.objectList) {
-            JButton button = new JButton(Main.objectname.get(Main.objectList.indexOf(obj)));
-            button.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    Util.attributesChanger(obj);
-                }
-            });
+            JButton button = new JButton(Main.objectName.get(Main.objectList.indexOf(obj))); // Button with name of the object
+            button.addActionListener(e -> Util.attributesChanger(obj)); // Open the attributes changer on button press
             panel.add(button);
         }
 
