@@ -3,10 +3,10 @@ A 3D modeling software written with the (kind of scuffed) GLOOP Library for Java
 
 ### **Controls:**
 
-`c` Create a menu to create objects
+- `c` Open a menu to create objects
 
-`l` Opens the object list. If you click on an object, you can move it.
+- `l` Open the object list. You can move objects by clicking on them
 
-`q` Quit the application
+- `q` Quit the application
 
 *Written by two 9th graders*
